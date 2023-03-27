@@ -1,6 +1,7 @@
-import API_KEY from './config.js'
+import {API_KEY} from './config.js'
 
 export const fetchBooks = async (text, maxResults=10, startIndex=0) => {
+    console.log(API_KEY)
     const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${text}&maxResults=${maxResults}&startIndex=${startIndex}&key=${API_KEY}`)
     const {items} = await response.json()
     return items
