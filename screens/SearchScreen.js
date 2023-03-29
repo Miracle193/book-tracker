@@ -5,7 +5,7 @@ import { Header } from '@rneui/base'
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons'
 import SearchBar from '../components/SearchBar';
-import BooksList from '../components/BooksList/'
+import BooksList from '../components/BooksList'
 
 const MAXRESULT = 10
 const renderBooks = onSelect => ({item}) => {return (<BooksList onSelect={onSelect} {...item}/>)}
